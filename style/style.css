@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #202026;
+}
+
+button{
+    cursor: pointer;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1.1fr 8fr;
+    height: 93vh;
+}
+
+.horizontal-nav a{
+    color: orange;
+    text-decoration: none;
+    margin: 8px 15px 0 20px;
+    font-size: 130%;
+}
+
+.horizontal-nav h1{
+    color: #fff;
+}
+
+.horizontal-nav{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #262729;
+    border-bottom: 5px solid #202026;
+}
+
+
+.vertical-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #262729;
+    padding: 10%;
+}
+
+.vertical-nav a{
+    margin: 10%;
+    text-decoration: none;
+    color: #a5a6ab;
+    display: flex;
+}
+
+.vertical-nav a:hover{
+    color: #fff;
+}
+
+.vertical-nav i{
+    padding-right: 10px;
+}
+
+main{
+    margin: 2%;
+}
+
+main .title_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .title_div div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .title_div .btn_newTasks{
+    background-color: #a554f1;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+main .title_div input{
+    background-color: #262729;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+main .title_div .btn_search{
+    background-color: #262729;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: 10px;
+}
+
+main .title_div h2{
+    color: #fff;
+}
+
+main .frame_tasks{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+}
+
+main .frame_tasks .task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262729;
+    color: #fff;
+    height: 20%;
+    border-radius: 15px;
+    width: 70%;
+    text-overflow: initial;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+main .frame_tasks .task form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .frame_tasks .task .title, .description{
+    margin: 15px;
+}
+
+main .frame_tasks .task button{
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+main .frame_tasks .task .btn_edit{
+    background-color: orange;
+}
+
+main .frame_tasks .task .btn_delete{
+    background-color: red;
+}
+
+.user_info{
+    display: flex;
+    color: #fff;
+}
+
+.user_info div{
+    margin-right: 10px;
+}
+
+img{
+    height: 40px;
+    border-radius: 100%;
+}
+
+.popup{
+    visibility: hidden;
+    width: 400px;
+    background-color: #262729;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    color: #fff;
+    width: 40%;
+    border: 1px solid #a554f1;
+}
+
+.popup .popup_title_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup .popup_title_div .close_btn{
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.popup div{
+    padding: 15px;
+}
+
+.popup input{
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.popup p{
+    margin-bottom: 5px;
+}
+
+.popup .div_button{
+    text-align: center;
+}
+
+.popup button{
+    background-color: #a554f1;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.erro{
+    color: red;
+}
+
+
+/* --------- EDIT POPUP --------- */
+
+.popup_edit{
+    visibility: hidden;
+    width: 400px;
+    background-color: #262729;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    color: #fff;
+    width: 40%;
+    border: 1px solid orange;
+}
+
+.popup_edit .popup_title_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup_edit .popup_title_div .close_btn{
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.popup_edit div{
+    padding: 15px;
+}
+
+.popup_edit input{
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.popup_edit p{
+    margin-bottom: 5px;
+}
+
+.popup_edit .div_button{
+    text-align: center;
+}
+
+.popup_edit form{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup_edit button{
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.popup_edit .popup_title_div .close_btn_edit{
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.info_input{
+    width: 100%;
+}
