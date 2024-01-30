@@ -1,5 +1,5 @@
 <?php
-    include_once "../pages/system.php";
+    include_once "../system/system.php";
 ?>
 
 <!DOCTYPE html>
